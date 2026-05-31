@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Sample Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 2rem;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #667eea;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .section h2 {
+            color: #f5576c;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        
+        .section p {
+            margin-bottom: 1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .team {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .team-member {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .team-member h3 {
+            color: #f5576c;
+            margin: 1rem 0 0.5rem;
+        }
+        
+        .team-member p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-card h3 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-card p {
+            color: rgba(255,255,255,0.9);
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="about.html">ℹ️ About</a>
+    </nav>
+    
+    <header>
+        <h1>About Sample Project</h1>
+        <p>Learn more about our mission and team</p>
+    </header>
+    
+    <main>
+        <div class="section">
+            <h2>Our Mission</h2>
+            <p>We are dedicated to creating simple, elegant, and functional web solutions that help businesses and individuals achieve their goals online. Our mission is to make web development accessible to everyone, regardless of their technical background.</p>
+            <p>With a focus on modern design principles and user experience, we strive to deliver projects that not only look great but also perform exceptionally well across all devices and platforms.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Quick Stats</h2>
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>50+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <h3>100%</h3>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="stat-card">
+                    <h3>5+</h3>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Our Team</h2>
+            <p>Meet the talented individuals behind our success:</p>
+            <div class="team">
+                <div class="team-member">
+                    <div style="font-size: 3rem;">👨‍💻</div>
+                    <h3>John Developer</h3>
+                    <p>Full Stack Developer</p>
+                </div>
+                <div class="team-member">
+                    <div style="font-size: 3rem;">👩‍🎨</div>
+                    <h3>Sarah Designer</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+                <div class="team-member">
+                    <div style="font-size: 3rem;">👨‍💼</div>
+                    <h3>Mike Manager</h3>
+                    <p>Project Manager</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Why Choose Us?</h2>
+            <ul style="margin-left: 2rem;">
+                <li>✅ Responsive and mobile-friendly designs</li>
+                <li>✅ Fast loading times and optimized performance</li>
+                <li>✅ Clean, maintainable code</li>
+                <li>✅ Excellent customer support</li>
+                <li>✅ Affordable pricing packages</li>
+                <li>✅ 24/7 availability and ongoing maintenance</li>
+            </ul>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 Sample Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
